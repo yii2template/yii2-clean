@@ -3,7 +3,15 @@
 
 Чистый шаблон на Yii2 для быстрого старта разработки.
 
-Генерация приложений на выбор:
+Создание проекта из шаблона:
+
+    composer create-project --prefer-dist yii2template/yii2-clean
+
+Устанавка зависимостей:
+
+    composer install
+
+Генерация приложений:
 
     php vendor/yii2lab/yii2-app/src/yii
 
