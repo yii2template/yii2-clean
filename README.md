@@ -12,6 +12,7 @@
  * `php init` - инициализация проекта
  * `php yii migrate` - миграции БД
  * `php yii db/fixture` - импорт данных в БД
+ * `php yii vendor/test/all` - запускаем автотесты
 
 Данные админа:
 
