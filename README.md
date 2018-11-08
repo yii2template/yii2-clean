@@ -13,3 +13,7 @@
  * `php yii migrate` - миграции БД
  * `php yii db/fixture` - импорт данных в БД
 
+Данные админа:
+
+    login: 77771111111
+    password: Wwwqqq111
