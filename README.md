@@ -9,7 +9,17 @@
 
     composer create-project --prefer-dist yii2template/yii2-clean
 
-Устанавка зависимостей:
+### Зависимости
+
+Установка ``oauth-token`` от ``Github``
+
+    composer config -g github-oauth.github.com <токен>
+
+Удаление плагинов ``Composer`` для зависимостей ``bower`` и ``npm``
+
+    composer global remove "fxp/composer-asset-plugin"
+
+Устанавка зависимостей для разработки
 
     composer install
 
@@ -23,7 +33,7 @@
 
     php init
 
-Проверьте настроки ссылок и БД в конфиге `env-local.php`
+Проверьте настроки веб-домена и БД в конфиге `common/config/env-local.php`
 
 Миграции БД:
 
@@ -33,11 +43,17 @@
 
     php yii db/fixture
 
-Запускаем автотесты:
-
-    php yii vendor/test/all
+## Данные для входа
 
 Заходим на сайт за админа:
 
     login: 77771111111
     password: Wwwqqq111
+
+## Автотесты
+
+Местоположение ``codeception`` задаем в файле ``console/config/params-local.php``
+
+Запуск:
+
+    php yii vendor/test/all
