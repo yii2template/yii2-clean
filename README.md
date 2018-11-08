@@ -57,3 +57,19 @@
 Запуск:
 
     php yii vendor/test/all
+
+## Генерация REST API документации
+
+Сборка исходников:
+
+    php yii rest/doc/generate
+
+Создает документацию по пути `api/v1/docs`.
+Далее необходимо выполнить компиляцию в HTML.
+
+    cd api/v1/docs
+    raml2html "./api.raml" > "./dist/index.html"
+
+Готовая документация будет сохранена тут `api/v1/docs/dist/index.html`.
+
+Ссылка - `http://api.example.com/v1/doc/html`.
