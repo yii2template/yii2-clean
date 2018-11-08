@@ -1,0 +1,69 @@
+{
+	"name": "yii2template/yii2-clean",
+	"description": "Clean web application",
+	"keywords": [
+		"application",
+		"web"
+	],
+	"type": "project",
+	"minimum-stability": "stable",
+	"require": {
+		"yii2lab/yii2-app": "dev-master",
+		"yii2lab/yii2-application-template": "dev-master",
+		"yii2lab/yii2-init": "dev-master",
+		"yii2lab/yii2-console": "dev-master",
+		"yii2lab/yii2-rbac": "dev-master",
+		"yii2lab/yii2-store": "dev-master",
+		"yii2lab/yii2-rest": "dev-master",
+		"yii2lab/yii2-helpers": "dev-master",
+		"yii2lab/yii2-misc": "dev-master",
+		"yii2lab/yii2-ubuntu-font": "dev-master",
+		"yii2lab/yii2-validator": "dev-master",
+		"yii2lab/yii2-domain": "dev-master",
+		"yii2lab/yii2-extension": "dev-master",
+		"yii2lab/yii2-notify": "dev-master",
+		"yii2lab/yii2-widgets": "dev-master",
+		"yii2lab/yii2-core": "dev-master",
+		"yii2lab/yii2-navigation": "dev-master",
+		"yii2lab/yii2-db": "dev-master",
+		"yii2lab/yii2-design-pattern": "dev-master",
+		"yii2module/yii2-error": "dev-master",
+		"yii2module/yii2-lang": "dev-master",
+		"yii2module/yii2-markdown": "dev-master",
+		"yii2module/yii2-dashboard": "dev-master",
+		"yii2module/yii2-account": "dev-master",
+		"yii2module/yii2-summary": "dev-master"
+	},
+	"require-dev": {
+		"yii2lab/yii2-test": "dev-master",
+		"yii2module/yii2-guide": "dev-master",
+		"yii2module/yii2-vendor": "dev-master",
+		"yii2module/yii2-tool": "dev-master",
+		"yii2guide/markdown": "dev-master",
+		"yii2guide/misc": "dev-master",
+		"yii2guide/perfect-code": "dev-master",
+		"yii2guide/team": "dev-master"
+	},
+	"config": {
+		"secure-http": false,
+		"process-timeout": 1800
+	},
+	"extra": {
+		"installer-types": [
+			"bower-asset",
+			"npm-asset"
+		],
+		"installer-paths": {
+			"vendor/{$vendor}/{$name}/": [
+				"type:bower-asset",
+				"type:npm-asset"
+			]
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	]
+}
